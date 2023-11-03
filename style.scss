@@ -1,0 +1,344 @@
+// universal 
+body {
+    background-color: #fff;
+}
+.card--icon--wrapper {
+    display: flex;
+    position: relative;
+}
+// hover effects wrapper grid
+.four--column__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    height: auto;
+    column-gap: 2vw;
+    padding: 2vw 2vw;
+    @media screen and (max-width:1024px) and (min-width:641px) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+      
+    }
+    @media screen and (max-width:640px) {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr ;
+    }
+}
+// end hover effects wrapper grid
+// card text classes
+.about--card--titles {
+    color: #000;
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-display: swap;
+}
+.about--card--descriptions {
+    color: #000;
+    font-family: 'Figtree', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.25rem;
+    padding:0 1em 0 1em;
+    text-align: center;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-display: swap;
+}
+// end card text classes
+// end universal
+
+// title and description
+.title-and-description__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Figtree', sans-serif;
+}
+.title {
+    padding: .5em 0 .5em 0;
+    font-size: 1.75em;
+    font-weight: 700;
+    line-height: 1.75em;
+    @media screen and (max-width: 640px) {
+        font-size: 1.25em;
+        font-weight: 600;
+        line-height: 1.25em;
+    }
+}
+.description {
+    font-size: 1.25em;
+    padding: 0 10% 0 10%;
+    text-align: center;
+    @media screen and (max-width: 640px) {
+        font-size: 1em;
+        line-height: 1em;
+    }
+}
+.code--example {
+    font-size: 1.25em;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    background: green;
+    @media screen and (max-width: 640px) {
+        font-size: 1em;
+        line-height: 1em;
+    }
+}
+// title and description end
+
+// circle card
+.circle--card__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    padding: 20px;
+    border: 2px solid #00356640;
+    opacity: .9;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+    @media screen and (max-width:1024px) and (min-width:641px) {
+        margin: 2vw 0 2vw 0;  
+    }
+    @media screen and (max-width:640px) {
+        margin: 2vw 1vw 2vw 1vw;
+    }
+}
+.circle--card__wrapper:hover {
+    transition: all 0.7s ease-in-out; 
+    transform: translateY(-2);
+    border: 2px solid #003566ff;
+    box-shadow: 2px 2px 6px #7b9bb9;
+    cursor: pointer;
+    overflow: hidden;
+}
+.card--icon--wrapper {
+    display: flex;
+    position: relative;
+}
+.circle--card--icon--background {
+    padding: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+    background-color: #8B60A0;
+    border-radius: 50%;
+}
+.circle--card--icon--background i {
+    font-size: 2em;
+    color: #11151C;
+}
+.circle--hover--effect {
+    position: absolute;
+    background-color: #541675;
+    border-radius: 50%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: all .7s ease-in-out;
+}
+.circle--card__wrapper:hover .circle--hover--effect {
+    transform: scale(12);
+    opacity: .8;
+}
+// end circle card
+
+// double circle card
+.double--circle--card__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    padding: 20px;
+    border: 2px solid #00356640;
+    opacity: .9;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+    @media screen and (max-width:1024px) and (min-width:641px) {
+        margin: 2vw 0 2vw 0;  
+    }
+    @media screen and (max-width:640px) {
+        margin: 2vw 1vw 2vw 1vw;
+    }
+}
+.double--circle--card__wrapper:hover {
+    transition: all 0.7s ease-in-out; 
+    transform: translateY(-2);
+    border: 2px solid #003566ff;
+    box-shadow: 2px 2px 6px #7b9bb9;
+    cursor: pointer;
+    overflow: hidden;
+}
+.double--circle--card--icon--background {
+    padding: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+    background-color: #A0695F;
+    border-radius: 50%;
+}
+.double--circle--card--icon--background i {
+    font-size: 2em;
+    color: #11151C;
+}
+.first--circle--hover--effect {
+    position: absolute;
+    background-color: #82382A;
+    border-radius: 50%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: all .7s ease-in-out;
+}
+.second--circle--hover--effect {
+    position: absolute;
+    background-color: #752415;
+    border-radius: 50%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: all .9s ease-in-out;
+}
+.double--circle--card__wrapper:hover .first--circle--hover--effect {
+    transform: scale(12);
+    opacity: .8;
+}
+.double--circle--card__wrapper:hover .second--circle--hover--effect {
+    transform: scale(12);
+    opacity: .8;
+}
+// end double circle card
+
+// square card
+.square--card__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    padding: 20px;
+    border: 2px solid #00356640;
+    opacity: .9;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+    @media screen and (max-width:1024px) and (min-width:641px) {
+        margin: 2vw 0 2vw 0;  
+    }
+    @media screen and (max-width:640px) {
+        margin: 2vw 1vw 2vw 1vw;
+    }
+}
+.square--card__wrapper:hover {
+    transition: all 0.7s ease-in-out; 
+    transform: translateY(-2);
+    border: 2px solid #003566ff;
+    box-shadow: 2px 2px 6px #7b9bb9;
+    cursor: pointer;
+    overflow: hidden;
+}
+.square--card--icon--background {
+    padding: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+    background-color: #76A05F;
+    border-radius: 1em;
+}
+.square--card--icon--background i {
+    font-size: 2em;
+    color: #11151C;
+}
+.square--hover--effect {
+    position: absolute;
+    background-color: #367515 ;
+    border-radius: 1em;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: all .7s ease-in-out;
+}
+.square--card__wrapper:hover .square--hover--effect {
+    transform: scale(12);
+    opacity: .8;
+    border-radius: 2em;
+}
+// end square card
+
+// icon only card
+.icononly--card__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    padding: 20px;
+    border: 2px solid #00356640;
+    opacity: .9;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+    @media screen and (max-width:1024px) and (min-width:641px) {
+        margin: 2vw 0 2vw 0;  
+    }
+    @media screen and (max-width:640px) {
+        margin: 2vw 1vw 2vw 1vw;
+    }
+}
+.icononly--card__wrapper:hover {
+    transition: all 0.7s ease-in-out; 
+    transform: translateY(-2);
+    border: 2px solid #003566ff;
+    box-shadow: 2px 2px 6px #7b9bb9;
+    cursor: pointer;
+    overflow: hidden;
+}
+.icononly--card--icon--wrapper {
+    display: flex;
+    position: relative;
+    transform: translateY(85%);
+    transition: all .7s ease-in-out;
+}
+.icononly--card--icon--background {
+    padding: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+    background-color: #5F96A0;
+    border-radius: 50%;
+}
+.icononly--card--icon--background i {
+    font-size: 2em;
+    color: #11151C;
+}
+.icononly--hover--effect {
+    position: absolute;
+    background-color: #156675;
+    border-radius: 50%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: all .7s ease-in-out;
+}
+.icononly--card__wrapper:hover .icononly--hover--effect {
+    transform: scale(12);
+    opacity: .8;
+}
+.icononly--card__wrapper:hover .icononly--card--icon--wrapper {
+    transform: translateY(0);
+}
+.icononly--card__wrapper:hover .text--fade--in {
+    opacity: 1;
+}
+
+.text--fade--in {
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s ease-in-out;
+}
+// end icon only card

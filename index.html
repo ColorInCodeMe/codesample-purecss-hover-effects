@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover Effects</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+        <div class="title-and-description__wrapper">
+            <h1 class="title">Pure CSS Card Hover Effects</h1>
+            <p class="description">Using a little-known CSS technique one can avoid using Javascript for many CSS effects. This means user computer resources are left for other elements of the site that truly require them. Sites load faster for users with new and old computers alike. Typically hover classes are applied to the same element that is hovered. However, in this instance the wrapper is hovered, yet a different element is affected. This is achieved using a specific syntax of class chaining. In the portion of CSS below, The wrapper class in its hover state is triggering the circle class to be in its hovered state, as if that circle class is itself being hovered. The same parent class can be used to trigger as many elements as required for the desired effect.</p>
+            <p class="code--example"> ".circle--card__wrapper:hover .circle--hover--effect" </p>
+        </div>
+        <!-- four hover examples start here -->
+        <div class="four--column__wrapper">
+            <!-- expanding circle start -->
+            <div class="circle--card__wrapper">
+                <div class="card--icon--wrapper">
+                    <div class="circle--card--icon--background">
+                        <i class="fa-regular fa-laptop-code fa-fw"></i>
+                    </div>
+                    <div class="circle--hover--effect"></div>
+                </div>
+                <h3 class="about--card--titles">Expanding Circle</h3>
+                <p class="about--card--descriptions">One of my favorite hover effects. When the text box is hovered a circle grows and fills the box with color.</p>
+            </div>
+            <!-- double circle start -->
+            <div class="double--circle--card__wrapper">
+                <div class="card--icon--wrapper">
+                    <div class="double--circle--card--icon--background">
+                        <i class="fa-sharp fa-regular fa-code-branch fa-fw"></i>
+                    </div>
+                    <div class="first--circle--hover--effect"></div>
+                    <div class="second--circle--hover--effect"></div>
+                </div>
+                <h3 class="about--card--titles">Double Circle</h3>
+                <p class="about--card--descriptions">A variation of the previous hover effect. This one takes advantage of two circles to create a ripple effect.</p>
+            </div>
+            <!-- square card start -->
+            <div class="square--card__wrapper">
+                <div class="card--icon--wrapper">
+                    <div class="square--card--icon--background">
+                        <i class="fa-regular fa-code-fork fa-fw"></i>
+                    </div>
+                    <div class="square--hover--effect"></div>
+                </div>
+                <h3 class="about--card--titles">Square Icon</h3>
+                <p class="about--card--descriptions">Similar to the expanding circle card but square. Can be applied to any of the other examples.</p>
+            </div>
+            <!-- icon only start -->
+            <div class="icononly--card__wrapper">
+                <div class="icononly--card--icon--wrapper">
+                    <div class="icononly--card--icon--background">
+                        <i class="fa-regular fa-code-merge fa-fw cs--icons"></i>
+                    </div>
+                    <div class="icononly--hover--effect"></div>
+                </div>
+                <h3 class="text--fade--in about--card--titles">Hover Reveal</h3>
+                <p class="text--fade--in about--card--descriptions">A more dynamic varient. When the card is hovered the content is revealed.</p>
+            </div>
+        </div>
+        <!-- four hover examples end here -->
+    <script src="https://kit.fontawesome.com/c515fbd995.js" crossorigin="anonymous"></script>
+</body>
+</html>
